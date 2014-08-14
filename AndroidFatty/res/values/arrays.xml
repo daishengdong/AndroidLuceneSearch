@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="indexOfSearch">
+        <item>按书名查找</item>
+        <item>按章查找</item>
+        <item>按节查找</item>
+        <item>按内容查找</item>
+        <item>查找所有</item>
+    </string-array>
+
+</resources>

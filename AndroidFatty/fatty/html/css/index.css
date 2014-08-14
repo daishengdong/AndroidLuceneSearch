@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	15;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Karla', serif;
+	font-size:100%;
+	background: url(../img/siteBackground.jpg);
+	margin: 0;
+	padding: 0;
+	color: #555555;
+	text-shadow:0 0px, 1px 1px #ffffff;
+}
+
+h1 {
+	font-size:3.01em;
+	font-family: 'Merienda One', cursive;
+	font-weight:normal;
+}
+
+h2 {
+	font-family:'Courgette', cursive;
+	font-size:2.142857142857143em; /* 30px/14px */
+	color:#242424;
+	font-weight:normal;
+}
+
+h3 {
+	font-family:"microsoft yahei", cursive;
+	font-size:1.285714285714286em; /* 18px/14px */
+	color:#242424;
+	font-weight:normal;
+}
+
+a img { 
+	border: none;
+}
+
+a {
+	color: #f23e03;
+	text-decoration: none; 
+	-moz-transition: 0.4s color linear;
+	-webkit-transition: 0.4s color linear;
+	transition: 0.4s color linear;
+}
+
+a:hover, a:active, a:focus { 
+	color: #242424;
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+p {
+	line-height:140%;
+	font-family:"microsoft yahei",Tahoma,arial,sans-serif;
+}
+
+.wrapper {
+	width:93.75%; /* 960px/1024px  */
+	margin:0 auto
+}
+
+.headerPicBox {
+	background:url(../img/headerPic.jpg) no-repeat center center;
+	width:auto;
+	height:383px;
+	border-radius:10px;
+}
+
+.titleBox {
+	padding-top:240px;
+}
+
+.headerPicTitle {
+	background-color: rgba(51, 51, 51, 0.5);
+	border-radius: 0 10px 10px 0;
+	padding:10px;
+	margin-right:20px;
+	box-shadow: 2px 2px 0px 0 rgba(200, 209, 198, 0.5);
+}
+
+header {
+}
+
+.logo {
+	position:left;	
+	width:5px;
+	height:5px;	
+}
+
+.logo h1 {
+	padding:20px 0 0 55px;
+	color:#1E90FF;
+}
+
+h1 a, h1 a:hover {
+	color:#ffffff;
+	text-shadow:0 0px, 1px 1px #7a2000;
+	text-decoration:none;
+}
+
+.boxes {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.4);
+	border-radius:10px;
+	margin:10px 0;
+	padding:5px;
+}
+
+.boxes ul {
+	width:93.75%;
+	margin:0 auto;
+}
+
+.boxes li {
+	width:28%;
+	float:left;
+	padding:2%;
+	list-style-type:none;
+}
+
+.button {
+	padding-top:10px;
+}
+
+.button a {
+	font-family:'Courgette', cursive;
+	font-size:1.285714285714286em; /* 18px/14px */
+	color:#ffffff;
+	font-weight:normal;
+	text-decoration:none;
+	text-shadow:0 0px, 1px 1px #000000;
+	background:#333333;
+	border-radius:10px;
+	padding:6px 8px;
+}
+
+.button a:hover {
+	background:#f23e03;
+}
+
+.boxes img {
+	background:#ffffff;
+	padding:10px;
+	border:1px solid #cdcdcd;
+}
+
+footer {
+	display: block;
+	padding:20px 0;
+	
+}
+
+.footerBody {
+	text-align: center;
+	background:#cdcdcd;
+	border-radius:0 0 10px 10px;
+	padding:20px 0;
+}
+
+.footerBody a{
+	display: inline-block;
+	border-radius:0 0 10px 10px;	
+	width: 45px;
+	height: 45px;
+	background: url(../img/socials.png) 0 0 no-repeat;
+}
+
+.footerBody a+a {	
+	background-position: -53px 0;
+}
+
+.footerBody a+a+a {	
+	background-position: -106px 0;
+} 
+
+.footerBody a+a+a+a {	
+	background-position: right 0;
+}
+
+.topP {
+	background:url(../img/p.png) repeat-x left top;
+	height:13px;
+}
+
+.topP2 {
+	background:url(../img/p2.png) repeat-x left top;
+	height:13px;
+}
+
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+
+/**************************/
+/********Begin main menu***********/
+/**************************/
+nav {
+	background:#333333;
+	border-radius:0 0 10px 10px;
+	box-shadow: 2px 2px 0px 0 rgba(200, 209, 198, 0.8);
+	padding:20px 0;
+	margin-bottom:10px;
+	text-align:right;
+}
+
+nav ul {
+	padding-right:10px;
+}
+
+nav li {
+	display:inline;
+	font-family:'Courgette', cursive;
+	font-size:1.5em;
+	padding-right:5px;
+}
+
+nav li a {
+	color:#ffffff;
+	text-shadow:0 0px, 1px 1px #000000;
+	margin-top:4px;
+}
+
+nav li a:hover {
+	color:#f23e03;
+	text-shadow:0 0px, 1px 1px #000000;
+	text-decoration:none;
+}
+
+nav #active a {
+	color:#f23e03;
+	text-shadow:0 0px, 1px 1px #000000;
+	text-decoration:none;
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95.626%;
+	padding-left: 1.1869%;
+	padding-right: 1.1869%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+/* for 400px or less */
+@media screen and (max-width: 400px) {
+	
+    nav ul {
+		padding-top:10px,0,0,10px;
+	}
+	nav li {
+		display:inline;
+		font-family:'Courgette', cursive;
+		font-size:1em;
+		padding-right:5px;
+		text-align:center;
+	}
+	.logo h1 {
+	font-size:1.5em;
+}
+}
+
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	   
+    .boxes li {
+		width:85%;
+		float:none;
+		padding:2% 2% 5% 2%;
+		list-style-type:none;
+		border-bottom:1px solid #CCCCCC;
+	}
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 95.4836%;
+	padding-left: 0.7581%;
+	padding-right: 0.7581%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 95.0217%;
+	max-width: 1232px;
+	padding-left: 0.4891%;
+	padding-right: 0.4891%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+.headerPicBox {
+		background:url(../img/headerPic.jpg) no-repeat center center;
+		width:auto;
+		height:auto;
+		border-radius:10px;
+		-moz-background-size:cover;
+		-webkit-background-size:cover;
+		background-size:cover;
+}
+}
