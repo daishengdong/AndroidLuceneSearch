@@ -32,6 +32,7 @@ public class LuceneConfigurationUtil {
 			// 获取索引库路径
 			String path = Environment.getExternalStorageDirectory()
 					+ File.separator + "fatty" + File.separator + "lucene_index";
+
 			File targetDir = new File(path);
 			// 打开索引库
 			directory = FSDirectory.open(targetDir);

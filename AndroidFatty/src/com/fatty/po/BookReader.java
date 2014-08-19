@@ -16,6 +16,7 @@ public class BookReader {
 		try {
 			String path = Environment.getExternalStorageDirectory()
 					+ File.separator + "fatty" + File.separator + "books.xml";
+
 			File xmlFile = new File(path);   
 			FileInputStream inputStream = new FileInputStream(xmlFile);  
 			XmlPullParser parser = Xml.newPullParser();

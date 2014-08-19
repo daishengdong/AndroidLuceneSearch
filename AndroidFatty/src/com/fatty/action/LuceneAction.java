@@ -42,10 +42,11 @@ public class LuceneAction implements OnClickListener {
 		String value = this.value_et.getText().toString().trim();
 
 		// 调用业务层方法进行查询
-		ArrayList<Book> books = this.luceneService.queryBook(indexSearch, value);
+		// ArrayList<Book> books = this.luceneService.queryBook(indexSearch, value);
+		this.luceneService.queryBook(indexSearch, value);
 
 		// 调用业务层方法将搜索结果添加到ListView
-		this.luceneService.addBookToListView(books);
+		// this.luceneService.addBookToListView(books);
 
 		/*
 		Intent intent = new Intent();

@@ -12,10 +12,18 @@ import com.fatty.action.LuceneAction;
 import com.fatty.activity.R;
 
 public class LuceneActivity extends Activity {
+	// private final static int MIN_HEAP_SIZE = 5* 1024;
+	// private final static float TARGET_HEAP_UTILIZATION = 0.75f; 
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.law_layout);
+ 
+		// int newSize = 4 * 1024 * 1024 ; //设置最小堆内存大小为4MB
+
+		// VMRuntime.getRuntime().setMinimumHeapSize(MIN_HEAP_SIZE);
+		// VMRuntime.getRuntime().setTargetHeapUtilization(TARGET_HEAP_UTILIZATION);
 		this.initView();
 	}
 
